@@ -1,0 +1,103 @@
+﻿@{ 
+    ViewData["Title"] = "Producto";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 class="mt-4 mb-3">Producto/<span>Agregar Producto</span> </h4>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form class="form-producto">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txt-cod-producto"> Codigo : </label>
+                            <input type="text" class="form-control form-control-sm" 
+                                   id="txt-cod-producto" placeholder="Ejemplo : PRO01001" />
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txt-nom-producto"> Nombre : </label>
+                            <input type="text" class="form-control form-control-sm" 
+                                   id="txt-nom-producto" placeholder="Ejemplo : Tablet"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="txt-desc-producto"> Descripcion : </label>
+                            <textarea class="form-control" id="txt-desc-producto" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txt-cant-producto"> Cantidad : </label>
+                            <input type="text" class="form-control form-control-sm"
+                                   id="txt-cant-producto" placeholder="Ejemplo : 20"/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txt-prec-producto"> Precio : </label>
+                            <input type="text" class="form-control form-control-sm"
+                                   id="txt-prec-producto" placeholder="Ejemplo : 12.00"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="selec-categoria"> Categoria : </label>
+                            <select id="selec-categoria" class="form-control form-control-sm">
+                                <option>USB</option>
+                                <option>Fundas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="selec-marca"> Marca : </label>
+                            <select id="selec-marca" class="form-control form-control-sm">
+                                <option>LG</option>
+                                <option>Panasonic</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="select-file"> Imagen de Producto : </label>
+                            <input type="file" class="form-control form-control-sm"
+                                   id="select-file"/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="img-selec"> Imagen Seleccionada : </label>
+                        <img src="https://site112.com/img/200x200.png" class="rounded mx-auto d-block" alt="">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-danger mx-auto btn-block">Cancelar Registro</button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-success mx-auto btn-block">Registrar Producto</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

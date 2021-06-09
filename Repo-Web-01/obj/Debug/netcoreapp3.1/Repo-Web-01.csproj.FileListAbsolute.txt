@@ -380,3 +380,5 @@ C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Rep
 C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Repo-Web-01.dll
 C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Repo-Web-01.pdb
 C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Repo-Web-01.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Repo-Web-01.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\Repo-Web-01\Repo-Web-01\obj\Debug\netcoreapp3.1\Razor\Views\Producto\AddProducto.cshtml.g.cs
