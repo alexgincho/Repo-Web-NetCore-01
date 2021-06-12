@@ -141,10 +141,17 @@ namespace Repo_Web_01.Models.dbModels
 
                 entity.Property(e => e.IdMarca).HasColumnName("idMarca");
 
+                entity.Property(e => e.IdCategoria).HasColumnName("idCategoria");
+
                 entity.Property(e => e.NombreMarca)
                     .HasMaxLength(150)
                     .IsUnicode(false)
                     .HasColumnName("nombre_marca");
+
+                entity.HasOne(d => d.IdCategoriaNavigation)
+                    .WithMany(p => p.Marcas)
+                    .HasForeignKey(d => d.IdCategoria)
+                    .HasConstraintName("FK_marca_categoria");
             });
 
             modelBuilder.Entity<Producto>(entity =>
@@ -163,9 +170,13 @@ namespace Repo_Web_01.Models.dbModels
                     .HasColumnName("cod_producto");
 
                 entity.Property(e => e.DescripcionProducto)
-                    .HasMaxLength(150)
+                    .HasMaxLength(255)
                     .IsUnicode(false)
                     .HasColumnName("descripcion_producto");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("date")
+                    .HasColumnName("fecha_registro");
 
                 entity.Property(e => e.IdCategoria).HasColumnName("idCategoria");
 
@@ -184,6 +195,10 @@ namespace Repo_Web_01.Models.dbModels
                 entity.Property(e => e.PrecioProducto)
                     .HasColumnType("decimal(16, 2)")
                     .HasColumnName("precio_producto");
+
+                entity.Property(e => e.PrecioVenta)
+                    .HasColumnType("decimal(16, 2)")
+                    .HasColumnName("precio_venta");
 
                 entity.HasOne(d => d.IdCategoriaNavigation)
                     .WithMany(p => p.Productos)

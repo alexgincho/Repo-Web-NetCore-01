@@ -14,7 +14,9 @@ namespace Repo_Web_01.Models.dbModels
 
         public int IdMarca { get; set; }
         public string NombreMarca { get; set; }
+        public int? IdCategoria { get; set; }
 
+        public virtual Categorium IdCategoriaNavigation { get; set; }
         public virtual ICollection<Producto> Productos { get; set; }
     }
 }

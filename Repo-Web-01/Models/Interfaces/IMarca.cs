@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Repo_Web_01.Models.Interfaces
 {
-    public interface IProducto
+    public interface IMarca
     {
-       public void AddProducto(Producto producto);
+        public void AddMarca(Marca marca);
+        public List<Marca> GetMarcaByIdCategoria(int id);
     }
 }

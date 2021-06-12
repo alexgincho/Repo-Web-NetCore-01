@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Repo_Web_01.Models.Interfaces
 {
-    public interface IProducto
+    public interface ICategoria
     {
-       public void AddProducto(Producto producto);
+        public void AddCategoria(Categorium categoria);
+        public List<Categorium> GetAllCategoria();
     }
 }

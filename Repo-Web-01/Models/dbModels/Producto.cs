@@ -18,7 +18,9 @@ namespace Repo_Web_01.Models.dbModels
         public string DescripcionProducto { get; set; }
         public int? CantidadProducto { get; set; }
         public decimal? PrecioProducto { get; set; }
+        public decimal? PrecioVenta { get; set; }
         public string ImagenProducto { get; set; }
+        public DateTime? FechaRegistro { get; set; }
         public int? IdCategoria { get; set; }
         public int? IdMarca { get; set; }
 
